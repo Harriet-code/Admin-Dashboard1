@@ -1,0 +1,499 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.Topmain-bar .Top-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+  padding: 10px 30px;
+}
+.Topmain-bar .Top-header .welcome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.Topmain-bar .Top-header .welcome .welcome-text {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.Topmain-bar .Top-header .welcome .Overview {
+  border-bottom: 1px solid #000;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.Topmain-bar .Top-header .Overview {
+  border-bottom: 1px solid #000;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.header-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 18%;
+}
+.Topmain-bar .Top-header .welcome h1 {
+  font-size: 1.4rem;
+}
+
+.Topmain-bar .Top-header .welcome h2 {
+  font-size: 1rem;
+  border-bottom: 1px solid black;
+}
+
+.User-profile {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+.User-profile .profile-card p {
+  font-size: 0.8rem;
+}
+.User-profile .profile img {
+  width: 15px;
+  margin-left: 5rem;
+}
+.User-card {
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+  align-items: center;
+}
+.User-card img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+/* MAIN CONTAINER*/
+.main-container {
+  position: relative;
+  display: flex;
+  padding: 10px;
+  font-size: 0.8rem;
+}
+
+.main-container .first-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #eff1f2;
+  box-shadow: rgba(0, 0, 0, 0.07);
+  padding: 20px;
+  width: 70%;
+  overflow-x: auto;
+}
+
+.main-container .first-container .CardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: calc(100% - 250px);
+  font-size: 2rem;
+}
+
+.Filter-text {
+  font-size: 11px;
+  color: #777;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.Filter-text i {
+  margin-right: 10px;
+  font-size: 15px;
+}
+
+.CardHeader .negotiated,
+.CardHeader .Type {
+  display: flex;
+  background-color: #fff;
+  border-radius: 5px;
+  font-size: 10px;
+}
+.CardHeader .negotiated ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+.CardHeader li {
+  margin-right: 10px;
+}
+
+.CardHeader .negotiated .active {
+  background-color: hsl(196deg 35% 11%);
+  padding: 10px;
+  color: #fff;
+  border-radius: 5px 0px 0px 5px;
+}
+.CardHeader .Type ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+
+.CardHeader .Type .active {
+  background-color: hsl(158deg 85% 65%);
+  border-radius: 5px 0px 0px 5px;
+  color: #fff;
+  padding: 10px;
+}
+
+/* TABLE */
+table {
+  margin-top: 20px;
+  border-collapse: collapse;
+  width: 100%;
+}
+thead th {
+  font-size: 0.723rem;
+}
+th,
+td {
+  /* font-size: 0.8rem; */
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #fff;
+}
+tr:hover {
+  background-color: #d6eeee;
+}
+.display tbody td .tdHead,
+.tdHead-2,
+.tdHead-3,
+.tdHead-4,
+.tdHead-5,
+.tdHead-6,
+.tdHead-7,
+.tdHead-8 {
+  background-color: #007aff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 0.8rem;
+}
+.display tbody td .tdHead-2 {
+  background-color: #fc0d1b;
+}
+
+.display tbody td .tdHead-3 {
+  background-color: #20bbfb;
+}
+.display tbody td .tdHead-4 {
+  background-color: #8d6cab;
+}
+.display tbody td .tdHead-5 {
+  background-color: #20bbfb;
+}
+.display tbody td .tdHead-6 {
+  background-color: #fc0d1b;
+}
+
+.display tbody td .tdHead-7 {
+  background-color: #007aff;
+}
+.display tbody td .tdHead-8 {
+  background-color: #20bbfb;
+}
+
+.iconn .fas {
+  padding: 5px 15px;
+}
+
+.time .time-details,
+.stop .stop-details {
+  display: flex;
+  flex-direction: row;
+  font-size: 10px;
+  gap: 5px;
+}
+.time .time-details p {
+  color: red;
+}
+
+.fa-comment-box {
+  position: absolute;
+  color: #fff;
+  font-size: 3rem;
+  left: 350px;
+  top: 200px;
+  width: 100%;
+}
+
+/* SECOND CARD SESSION */
+.container-wrapper {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+  padding-left: 20px;
+}
+.container-wrapper .second-container {
+  /* flex: 1; */
+  box-shadow: rgba(0, 0, 0, 0.07);
+  padding: 25px;
+}
+.second-container .Investor h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+}
+.container-wrapper .second-container .Top {
+  border: none;
+  border-radius: 10px;
+  padding: 15px 15px;
+  background-color: #eeeef7;
+  color: #555;
+  cursor: pointer;
+  width: 100%;
+  font-size: 1rem;
+  margin-top: 10px;
+  box-shadow: rgba(0, 0, 0, 0.07);
+}
+
+.container-wrapper .second-container .Investor,
+.container-wrapper .second-container .Top {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* .Investor {
+  display: flex;
+  justify-content: space-between;
+} */
+.cardInvestor .card-details {
+  display: flex;
+  gap: 40px;
+  margin-top: 20px;
+}
+.cardInvestor .card-details h3 {
+  font-size: 1rem;
+}
+.cardInvestor .card-details p {
+  font-size: 0.8rem;
+}
+.cardInvestor .card-details img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* THIRD CARD  */
+.third-container {
+  box-shadow: rgba(0, 0, 0, 0.07);
+  padding: 20px;
+  margin-top: 20px;
+}
+.third-container .Bids {
+  display: flex;
+  justify-content: space-between;
+}
+.third-container .Bids h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+
+.cardHeader .negotiated,
+.cardHeader .type {
+  display: flex;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.07);
+  font-size: 10px;
+}
+
+.cardHeader .negotiated ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+
+.cardHeader .negotiated ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+
+.cardHeader .negotiated .active {
+  background-color: white;
+  box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, 0.07);
+  padding: 10px;
+  color: #000;
+  border-radius: 5px 0px 0px 5px;
+}
+.cardHeader .type ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+.cardHeader .type .active {
+  background-color: white;
+  box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, 0.07);
+  padding: 10px;
+  color: #000;
+  border-radius: 5px 0px 0px 5px;
+}
+
+.cardHeader li {
+  margin-right: 10px;
+}
+.cardHeader h4 {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+
+.tooltipper {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltipper .tooltippertext {
+  width: 150px;
+  visibility: hidden;
+  background-color: white;
+  color: black;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 28%;
+  left: -27%;
+  margin-left: -60px;
+}
+
+.tooltipper .tooltippertext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 44%;
+  margin-left: -5px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: white transparent transparent transparent;
+}
+.tooltipper:hover .tooltippertext {
+  visibility: visible;
+}
+.modal-container1 {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+}
+.image-container img {
+  width: 30px;
+  height: 30px;
+  border-radius: 150%;
+}
+.tooltipper {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltipper .tooltippertext {
+  width: 150px;
+  visibility: hidden;
+  background-color: white;
+  color: black;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 238%;
+  left: -27%;
+  margin-left: -60px;
+}
+
+.tooltipper .tooltippertext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 44%;
+  margin-left: -5px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: white transparent transparent transparent;
+}
+.tooltipper:hover .tooltippertext {
+  visibility: visible;
+}
+
+/* third container has modal effect when you hover on the from list item */
+.tooltipper1 {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltipper1 .tooltippertext1 {
+  width: 150px;
+  visibility: hidden;
+  background-color: white;
+  color: black;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 238%;
+  left: -27%;
+  margin-left: -60px;
+}
+
+.tooltipper1 .tooltippertext1::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 44%;
+  margin-left: -5px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: white transparent transparent transparent;
+}
+.tooltipper1:hover .tooltippertext1 {
+  visibility: visible;
+}
+.modal-container2 {
+  width: 100px;
+  height: 70px;
+  box-shadow: rgba(0, 0, 0, 0.07);
+  padding: 10px;
+}
+.modal-container2 .far {
+  font-size: 2rem;
+}

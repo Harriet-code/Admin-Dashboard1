@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboad</title>
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/media.css" />
+    <link rel="stylesheet" href="/main.js" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+
+  </div><script src="https://cdn.jsdelivr.net/npm/chart.js@3.6.0/dist/chart.min.js"></script>
+  </head>
+  <body>
+    <div class="Topmain-bar">
+      <div class="Top-header">
+        <div class="welcome">
+          <p class="welcome-text">Project Bid</p>
+          <p class="Overview">Overview</p>
+          <div class="underline"></div>
+        </div>
+
+        <div class="User-profile">
+          <div class="profile">
+            <img
+              src="images/WhatsApp Image 2021-11-03 at 11.37.42 PM.jpeg"
+              alt="sfs"
+            />
+          </div>
+          <div class="User-card">
+            <img class="user" src="/images/har.png" alt="sds" />
+            <p>Ingredia Nutrisha</p>
+            <i class="fas fa-caret-down"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- FIRST CONTAINER -->
+    <div class="main-container">
+      <div class="first-container">
+        <div class="CardHeader">
+          <div class="Filter-text">
+            <i class="fas fa-filter"></i>
+            <p>Filter</p>
+          </div>
+          <div class="negotiated">
+            <ul>
+              <li class="active">Negotiated</li>
+              <li>Yes</li>
+              <li>No</li>
+            </ul>
+          </div>
+
+          <div class="Type">
+            <ul>
+              <li class="active">Type</li>
+              <li>Live</li>
+              <li>Projects</li>
+              <li>Deal</li>
+              <li>Corporate</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- TABLE -->
+
+        <table id="table" class="display">
+          <thead>
+            <tr>
+              <th>Id</th>
+              <th>Title</th>
+              <th>Minimum Increment</th>
+              <th>Investment</th>
+              <th>Base Price</th>
+              <th>Timer</th>
+              <th>Current Price</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>
+                <div class="tdHead">
+                  <p>002784</p>
+                </div>
+                <p class="iconn"><i class="fas fa-comments-dollar"></i></p>
+              </td>
+              <td>2008 gcc Mistibishi Pajero Gls 157515kms</td>
+              <td>$5000+</td>
+              <td>50-Account manager name</td>
+              <td>$22,325</td>
+              <td class="time">
+                <div class="time-details">
+                  <span><i class="fas fa-clock"></i> </span>
+                  <span> 3.65am</span>
+                </div>
+                <div class="time-details">
+                  <span><i class="fas fa-stopwatch"></i> </span>
+                  <span> <p>6.37</p></span>
+                </div>
+              </td>
+
+              <td>$45,000</td>
+
+              <td class="stop">
+                <div class="stop-details">
+                  <span><i class="fas fa-stop-circle"></i> </span>
+                  <span>STOP</span>
+                </div>
+                <div class="stop-details">
+                  <span><i class="far fa-trash-alt"></i> </span>
+                  <span>CANCEL</span>
+                </div>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <div class="tdHead-2">
+                  <p>002784</p>
+                </div>
+              </td>
+              <td>2008 gcc Mistibishi Pajero Gls 157515kms</td>
+              <td>$5000+</td>
+              <td>32-Account manager name</td>
+              <td>$22,325</td>
+              <td class="time">
+                <div class="time-details">
+                  <span><i class="fas fa-clock"></i> </span>
+                  <span> 3.65am</span>
+                </div>
+                <div class="time-details">
+                  <span><i class="fas fa-stopwatch"></i> </span>
+                  <span><p>6.37</p></span>
+                </div>
+              </td>
+              <td>$45,000</td>
+              <td class="stop">
+                <div class="stop-details">
+                  <span><i class="fas fa-stop-circle"></i> </span>
+                  <span>STOP</span>
+                </div>
+                <div class="stop-details">
+                  <span><i class="far fa-trash-alt"></i> </span>
+                  <span>CANCEL</span>
+                </div>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <div class="tdHead-3">
+                  <p>002784</p>
+                </div>
+                <p class="iconn"><i class="fas fa-comments-dollar"></i></p>
+              </td>
+              <td>2008 gcc Mistibishi Pajero Gls 157515kms</td>
+              <td>$5000+</td>
+              <td><div class="tooltipper">43-Account manager name(hover me)
+                <span class="tooltippertext">
+                      <div class="modal-container1">
+       <div class="image-container">
+             <img
+         src="/images/har.png"
+         alt="Avatar"
+         class="avatar1" 
+       />
+       </div>
+       <div class="name-container1">
+       <p class="nameavatar1">Nick Reynolds</p>
+       <p class="nameavatar1">Sul 5:14AM</p>
+       </div>
+       </div></span></div>
+                    
+              </td>
+              <td>$22,325</td>
+              <td class="time">
+                <div class="time-details">
+                  <span><i class="fas fa-clock"></i> </span>
+                  <span> 3.65am</span>
+                </div>
+                <div class="time-details">
+                  <span><i class="fas fa-stopwatch"></i> </span>
+                  <span><p>6.37</p></span>
+                </div>
+              </td>
+              <td>$45,000</td>
+              <td class="stop">
+                <div class="stop-details">
+                  <span><i class="fas fa-stop-circle"></i> </span>
+                  <span>STOP</span>
+                </div>
+                <div class="stop-details">
+                  <span><i class="far fa-trash-alt"></i> </span>
+                  <span>CANCEL</span>
+                </div>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <div class="tdHead-4">
+                  <p>002784</p>
+                </div>
+              </td>
+              <td>2008 gcc Mistibishi Pajero Gls 157515kms</td>
+              <td>$5000+</td>
+              <td>67-Account manager name</td>
+              <td>$22,325</td>
+              <td class="time">
+                <div class="time-details">
+                  <span><i class="fas fa-clock"></i> </span>
+                  <span> 3.65am</span>
+                </div>
+                <div class="time-details">
+                  <span><i class="fas fa-stopwatch"></i> </span>
+                  <span><p>6.37</p></span>
+                </div>
+              </td>
+              <td>$45,000</td>
+              <td class="stop">
+                <div class="stop-details">
+                  <span><i class="fas fa-stop-circle"></i> </span>
+                  <span>STOP</span>
+                </div>
+                <div class="stop-details">
+                  <span><i class="far fa-trash-alt"></i> </span>
+                  <span>CANCEL</span>
+                </div>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <div class="tdHead-5">
+                  <p>002784</p>
+                </div>
+                <p class="iconn"><i class="fas fa-comments-dollar"></i></p>
+              </td>
+              <td>2008 gcc Mistibishi Pajero Gls 157515kms</td>
+              <td>$5000+</td>
+              <td>12-Account manager name</td>
+              <td>$22,325</td>
+              <td class="time">
+                <div class="time-details">
+                  <span><i class="fas fa-clock"></i> </span>
+                  <span> 3.65am</span>
+                </div>
+                <div class="time-details">
+                  <span><i class="fas fa-stopwatch"></i> </span>
+                  <span> <p>6.37</p> </span>
+                </div>
+              </td>
+              <td>$45,000</td>
+              <td class="stop">
+                <div class="stop-details">
+                  <span><i class="fas fa-stop-circle"></i> </span>
+                  <span>STOP</span>
+                </div>
+                <div class="stop-details">
+                  <span><i class="far fa-trash-alt"></i> </span>
+                  <span>CANCEL</span>
+                </div>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <div class="tdHead-6">
+                  <p>002784</p>
+                </div>
+                <p class="iconn"><i class="fas fa-comments-dollar"></i></p>
+              </td>
+              <td>2008 gcc Mistibishi Pajero Gls 157515kms</td>
+              <td>$5000+</td>
+              <td>78-Account manager name</td>
+              <td>$22,325</td>
+              <td class="time">
+                <div class="time-details">
+                  <span><i class="fas fa-clock"></i> </span>
+                  <span> 3.65am</span>
+                </div>
+                <div class="time-details">
+                  <span><i class="fas fa-stopwatch"></i> </span>
+                  <span><p>6.37</p></span>
+                </div>
+              </td>
+              <td>$45,000</td>
+              <td class="stop">
+                <div class="stop-details">
+                  <span><i class="fas fa-stop-circle"></i> </span>
+                  <span>STOP</span>
+                </div>
+                <div class="stop-details">
+                  <span><i class="far fa-trash-alt"></i> </span>
+                  <span>CANCEL</span>
+                </div>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <div class="tdHead-7">
+                  <p>002784</p>
+                </div>
+                <p class="iconn"><i class="fas fa-comments-dollar"></i></p>
+              </td>
+              <td>2008 gcc Mistibishi Pajero Gls 157515kms</td>
+              <td>$5000+</td>
+              <td>22-Account manager name</td>
+              <td>$22,325</td>
+              <td class="time">
+                <div class="time-details">
+                  <span><i class="fas fa-clock"></i> </span>
+                  <span> 3.65am</span>
+                </div>
+                <div class="time-details">
+                  <span><i class="fas fa-stopwatch"></i> </span>
+                  <span> <p>6.37</p></span>
+                </div>
+              </td>
+              <td>$45,000</td>
+              <td class="stop">
+                <div class="stop-details">
+                  <span><i class="fas fa-stop-circle"></i> </span>
+                  <span>STOP</span>
+                </div>
+                <div class="stop-details">
+                  <span><i class="far fa-trash-alt"></i> </span>
+                  <span>CANCEL</span>
+                </div>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <div class="tdHead-8">
+                  <p>002784</p>
+                  <!-- <p><i class="fas fa-comments-dollar"></i></p> -->
+                </div>
+              </td>
+              <td>2008 gcc Mistibishi Pajero Gls 157515kms</td>
+              <td>$5000+</td>
+              <td>6-Account manager name</td>
+              <td>$22,325</td>
+              <td class="time">
+                <div class="time-details">
+                  <span><i class="fas fa-clock"></i> </span>
+                  <span> 3.65am</span>
+                </div>
+                <div class="time-details">
+                  <span><i class="fas fa-stopwatch"></i> </span>
+                  <span><p>6.37</p></span>
+                </div>
+              </td>
+              <td>$45,000</td>
+              <td class="stop">
+                <div class="stop-details">
+                  <span><i class="fas fa-stop-circle"></i> </span>
+                  <span>STOP</span>
+                </div>
+                <div class="stop-details">
+                  <span><i class="far fa-trash-alt"></i> </span>
+                  <span>CANCEL</span>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <!-- SECOND CONTAINER  -->
+      <div class="container-wrapper">
+        <div class="second-container">
+          <div class="Investor">
+            <h1>Investors</h1>
+            <i class="fas fa-ellipsis-h"></i>
+          </div>
+
+          <div class="Top">
+            <div>Top</div>
+            <i class="fas fa-angle-down" class="Icon"></i>
+          </div>
+
+          <div class="cardInvestor">
+            <div class="card-details">
+              <img src="/images/har.png" alt="" />
+              <div class="cardText">
+                <h3>Doris Fisher</h3>
+                <p>Freelancer</p>
+              </div>
+            </div>
+
+            <div class="card-details">
+              <img src="/images/har.png" alt="" />
+              <div class="cardText">
+                <h3>Elizabeth Ellis</h3>
+                <p>Abu Dhabi</p>
+              </div>
+            </div>
+
+            <div class="card-details">
+              <img src="/images/har.png" alt="" />
+              <div class="cardText">
+                <h3>Carolyn Powell</h3>
+                <p>Dubai</p>
+              </div>
+            </div>
+
+            <div class="card-details">
+              <img src="/images/har.png" alt="" />
+              <div class="cardText">
+                <h3>Loius Hayes</h3>
+                <p>Abu Dhabi</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+<!-- Third container starts here -->
+        <div class="third-container">
+         
+         
+          <div class="Bids">
+            <h1>Bids Stats</h1>
+            <i class="fas fa-ellipsis-h" aria-hidden="true"></i>
+          </div>
+         
+          <div class="cardHeader">
+            <div class="filter">
+              <h4>Bids</h4>
+            </div>
+            <div class="negotiated">
+              <ul>
+                <li class="active">Date</li>
+                <li>From</li>
+                <li>To</li>
+              </ul>
+            </div>
+            <div class="type">
+              <ul>
+                <li class="active">Time
+                </li>
+                <li class="tooltipper1">From
+                  <span class="tooltippertext1">
+                    <div class="modal-container2">
+                      <i class="far fa-clock"></i>
+                      <p>11:39am</p>
+     </div></span>
+                </li>
+                <li>To</li>
+              </ul>
+            </div>
+          </div>
+
+          <canvas id="myChart2"></canvas>
+        </div>
+      </div>
+    </div>
+    <script src="/main.js"></script>
+  </body>
+</html>

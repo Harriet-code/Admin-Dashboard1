@@ -1,0 +1,82 @@
+@media screen and (max-width: 600px) {
+  .Topmain-bar .Top-header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .Topmain-bar .Top-header .welcome .Overview,
+  .Topmain-bar .User-profile p {
+    display: none;
+  }
+  .tooltipper .tooltippertext {
+    bottom: 108%;
+    left: -27%;
+    margin-left: -60px;
+  }
+
+  .Topmain-bar .User-profile .profile img {
+    margin-left: 1rem;
+  }
+  .Topmain-bar .User-profile .User-card {
+    margin-right: 10px;
+  }
+
+  .Topmain-bar .welcome .welcome-text {
+    margin-left: 5px;
+    font-size: 1.4rem;
+    font-weight: 600;
+  }
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    /* width: 100%; */
+  }
+
+  .main-container .first-container {
+    overflow-x: auto;
+  }
+
+  .container-wrapper {
+    width: 100%;
+    padding-left: 0;
+  }
+
+  .main-container .first-container .CardHeader {
+    width: calc(100% - 10px);
+  }
+  .CardHeader .negotiated .active {
+    margin-left: 10px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    /* width: 100%; */
+  }
+
+  .main-container .first-container {
+    width: auto;
+    overflow-x: auto;
+    padding: 10px 20px 10px 20px;
+  }
+  .tooltipper .tooltippertext {
+    bottom: 108%;
+    left: -27%;
+    margin-left: -60px;
+  }
+
+  .container-wrapper {
+    width: 100%;
+  }
+
+  .main-container .first-container .CardHeader {
+    width: calc(100% - 10px);
+  }
+
+  .CardHeader .negotiated .active {
+    margin-left: 10px;
+  }
+}
